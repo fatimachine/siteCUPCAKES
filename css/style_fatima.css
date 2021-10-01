@@ -31,6 +31,14 @@ header {
     
 }
 
+h1 {
+    box-sizing: border-box;
+    border: 7px solid #b934a2;
+
+    text-align: end;
+    color: #fff;
+}
+
 .clear {
     clear: both;
 }
