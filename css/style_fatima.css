@@ -1,79 +1,217 @@
+/* style pour la grille 06 */
 
 body {
-    margin: 10px 0;
-    padding: 0;
-
     background: repeating-linear-gradient(90deg, #E2C9D7, #E2C9D7 20px, #E9D2DF 0, #E9D2DF 40px);
-    font: 0.8em;
-    font-family: 'PT Sans', sans-serif;
-    text-align: center;
-    /* border-left: 5px solid #b934a2; */
+    color: palevioletred;
+    border-left: 2px solid purple;
 }
 
-main#container {
-    margin: 0 auto;
-    width: 770px;
+header 
+{
+width: 800px;
+height: 80px;
+margin: 0 auto;
+padding: 30px 0;
+background-color: #fff;
 
-    background: #fff;
-   
-    text-align: left;
-    border-left: 5px solid #b934a2;
+
 }
 
-/* en-tête */
+header > div
+{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+ 
+ /* la partie droite de l'en-tête  */
+ header figure+div
+ {
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-end;
+ }
 
 
+main {
+    
+    margin:0 auto;
+    width: 800px;
+}
 
-header {
-    height: 258px;
-    margin: 0;
-    border-left: 5px solid #b934a2;
+h2,h3 {
+    background-color: #fff;
+}
+
+
+section {
+    /* les sections sont display flex  */
+    display: flex;
+    margin:0 auto;
+    width: 800px;
     
 }
 
-h1 {
-    box-sizing: border-box;
-    border: 7px solid #b934a2;
 
-    text-align: end;
-    color: #fff;
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* passage à la ligne des éléments pour que la largeur des col soit respectée */
+    flex-wrap: wrap;
+    row-gap:5px;
+}
+/* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
+
+.col-1 {
+    /* cette valeur est la largeur en % d'une colonne si je veux la largeur de 2 colonnes je fais la largeur d'une colonne X 2 */
+    width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.666666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.666666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666666%;
+}
+
+.col-12 {
+    width: 100%;    
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+
+/* pour la galerie d'images  */
+
+.ml-50 {
+    margin-left: 50px;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+ img {
+    width: 160px;
+}
+
+
+
+.d-flex {
+    display: flex;
+}
+
+.g-20 {
+    gap: 20px;
 }
 
 .clear {
     clear: both;
 }
 
-
-
-
-#principal {
-    padding: 0 30px 0 100px;
-    margin-top: 15px;
-    border-left: 5px solid #b934a2;
-
-   
+/* page tableau */
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-#principal h2 {
-    padding-left: 25px;
+
+.tableau table {
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    border-collapse: collapse;
     
-    
-  
+}
+.tableau td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
 }
 
-#principal h3 {
-    margin-left: 15px;
+.tableau thead {
+    background: #d0e3fa;
+    border: 5px solid #6495ed;
+    text-align: center;
+}
+
+.tableau caption {
+    height: 50px;
     padding-left: 5px;
-    
+
+    background: #d0e3fa;
+    border: 1px solid #6495ed;
+
+    font-size: 25px;
+    text-align: left;
+    color: #6495ed;
 }
-
-/* pied de page  */
-footer {
-    background: #fff;
-    width: 770px;
-    height: 60px;
-    
-    border-left: 5px solid #b934a2;
-
-}
-
